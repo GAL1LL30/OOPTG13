@@ -10,7 +10,8 @@ class MeinThread implements Runnable{
     public MeinThread(String name, int pWait){
         this.name = name;
         pWait = time;
-        Thread t = new Thread(this);
+        t = new Thread(this);
+    }
 
     @Override
     public void run() {
