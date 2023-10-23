@@ -100,3 +100,33 @@
     System.out.println(einkaufsliste);
     System.out.println("----------------------");
 ````
+### Ausgabe
+````bash
+[Tomaten, Milch, Käse, Salami, Toilettenpapier]
+LinkedListSample 
+----------------------
+entfernt Element mit index 3
+----------------------
+usgabe mit Sysoganze Liste
+[Tomaten, Milch, Käse, Salami, Toilettenpapier]
+----------------------
+entfernt Element mit index 3
+----------------------
+Interiert über ganze Liste
+Tomatenptionen
+Milch
+-----------------
+[Käseser, Milch, Käse, Bier]
+----------------------
+Stapeloptionen
+----------------------
+[Wasser, Milch, Käse, Bier]
+einkaufsliste.pop()
+Wasser
+[Milch, Käse, Bier]
+----------------------
+einkaufsliste.pollLast()
+Bier
+[Milch, Käse]
+----------------------
+````
