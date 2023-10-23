@@ -13,6 +13,7 @@
 -> eine ArryList ist ähnlich schnell im Zugriff wie ein Array.
 - eine Arraylist ist keine Queue und kein Stack.
 
+### Codebeispiel
 ````java
     //ArrayListe erstellen
     ArrayList<String> namen = new ArrayList<>();
@@ -37,3 +38,65 @@
     System.out.println(namen.contains("Niklas"));
 ````
 
+## Linked List
+- Die LinkedList ist eine doppelt verkettete Liste. D.h. jedes Element kennt seine Vorgänger und Nachfolger.
+- Über den namen der LinkedList greift man mit einem Zeiger auf das erste Element der Liste zu. das letzte Element der Liste enthält den Wert `null`.
+
+### Vorteile 
+-  es können beliebig viele Elemente hinzugefügt und wieder entfernt werden
+- eine linkedList kann auch als Stapel verwendet werden(Sie ist es nicht)
+
+### Nachteile
+- langsame Interation (z.B. beim sortieren)
+
+### Codebeispiel
+````java
+    //LinkedList erzeugen
+    LinkedList<String> einkaufsliste = new LinkedList<>();
+
+    //Wete hinzufügen
+    einkaufsliste.add("Tomaten");
+    einkaufsliste.add("Milch");
+    einkaufsliste.add("Käse");
+    einkaufsliste.add("Salami");
+    einkaufsliste.add("Toilettenpapier");
+
+    //Ausgabe
+    System.out.println("Ausgabe mit Syso");
+    System.out.println(einkaufsliste);
+    System.out.println("----------------------");
+
+    //entfernen von Objekten
+    System.out.println("entfernt Element mit index 3");
+    einkaufsliste.remove(3);
+    System.out.println("----------------------");
+        
+    //Interiernen über Listen
+    System.out.println("Interiert über ganze Liste");
+    for (String s : einkaufsliste) {
+        System.out.println(s);
+    }
+    System.out.println("----------------------");
+
+    //Liste als Queue(Stack,Stapel)
+    System.out.println("Stapeloptionen");
+    einkaufsliste.removeFirst();
+    einkaufsliste.removeLast();
+    einkaufsliste.addFirst("Wasser");
+    einkaufsliste.addLast("Bier");
+    System.out.println("----------------------");
+
+    System.out.println(einkaufsliste);
+
+    //syso mit pop -> erstes wird einzeln ausgegeben und dann aus der Liste entfernt
+    System.out.println("einkaufsliste.pop()");
+    System.out.println(einkaufsliste.pop());
+    System.out.println(einkaufsliste);
+    System.out.println("----------------------");
+
+    //syso mit pollLast -> letztes wird einzeln ausgegeben und dann aus der Liste entfernt
+    System.out.println("einkaufsliste.pollLast()");
+    System.out.println(einkaufsliste.pollLast());
+    System.out.println(einkaufsliste);
+    System.out.println("----------------------");
+````
