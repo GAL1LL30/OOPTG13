@@ -58,5 +58,9 @@ public class LinkedListSample {
         System.out.println(einkaufsliste.pollLast());
         System.out.println(einkaufsliste);
         System.out.println("----------------------");
+
+        //betsimmte Werte aus Liste holen
+        String ware = einkaufsliste.get(0);
+        System.out.println(ware);
     }
 }
