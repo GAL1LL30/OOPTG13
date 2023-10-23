@@ -36,3 +36,4 @@
     //prüfen ob Werte in der Liste sind
     System.out.println(namen.contains("Niklas"));
 ````
+
