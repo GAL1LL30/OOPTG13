@@ -65,3 +65,48 @@ System.out.println(primzahlen.contains(5));
 Integer i1 = primzahlen.get(0);
 ````
 # LinkedList
+- verkettete Liste
+- jeder Wert kennt seinen Nachfolger und seinen Nachfolger
+### Vorteile
+- es könen belibig viele Elemente hinzugefügt oder entfernt werden
+- eine LinkedList kann auch als Speicher verwendet werden
+### Nachteile
+- langsame Iteration (z.B. beim sortieren)
+### CodeBeispiel
+````java
+//LinkedList erzeugen
+LinkedList<String> programmiersprachen = new LinkedList<>();
+
+//Objekte hinzufügen
+programmiersprache.add("c");
+programmiersprache.add("java");
+programmiersprache.add("c++");
+
+//Liste ausgeben
+System.ot.println(programmiersprache);
+
+//Objekte entfernen
+programmiersprache.remove(1);
+
+//Über Liste iterieren
+for(String i : programmiersprache){
+	System.out.println(i);
+}
+
+//prüfen ob Werte in liste sind -> Rückgabewert = boolscher Wert
+System.out.println(programmiersprache.contains("c++"));
+
+//Wert aus Liste holen
+String i1 = programmiersprache.get(0);
+
+//Listen als Queue (Stack, Stapel)
+programmiersprache.removeFirst();
+programmiersprache.removeLast();
+programmiersprache.addFirst("Basic");
+programmiersprache.addLast("VBA");
+
+String test1 = programmiersprache.pollLast();	//Letztes Element wird aus dem Array geholt und in test1 gespeichert
+
+//Ausgabe
+System.out.println(programmiersprache);
+````
