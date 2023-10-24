@@ -37,6 +37,7 @@ ENDE FÜR
 - java.util.List muss implementiert werden
 - ist immer ein dimensional
 - Eine ArrayList vergrößert sich immer so, dass genügend Plätze für neue Daten vorhanden sind -> es wird wenn nötig ein neuses Arry gebaut und die alten Daten werden übertragen
+### Codebeispiel:
 ````java
 //ArrayList erstellen
 ArrayList<integer> primzahlen = new ArrayList<>();
@@ -63,6 +64,4 @@ System.out.println(primzahlen.contains(5));
 //Wert aus Liste holen
 Integer i1 = primzahlen.get(0);
 ````
-
-
 # LinkedList
