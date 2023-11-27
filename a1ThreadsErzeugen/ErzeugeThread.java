@@ -10,8 +10,8 @@ public class ErzeugeThread {
         MeinThread a = new MeinThread("a", 100);
         MeinThread b = new MeinThread("b", 30);
 
-        a.start();
-        b.start();
+        a.run();
+        b.run();
 
         System.out.println("Main zuende");
     }
