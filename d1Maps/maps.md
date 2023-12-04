@@ -9,11 +9,16 @@
 
 ## Map bearbeitung
 
-- `public name put(key,value)` -> Ein Element wird an mit dem Key hinzugefügt + gibt Wert aus wenn Schlüssel bereits in der Map vorhanden ist, sonst null
-- `public name remove (Object key)` -> Keys wird gelöscht + Wert des gelöschten Keys wird ausgegeben
-- `public Collection values()` -> gibt alle Werte der Map aus
-- `public name get(Object key)` -> ermittelt Wert zu Key
-- `public boolean isEmpty()` -> prüft ob die Map leer ist
+- `name.put(key,value)` -> Ein Element wird an mit dem Key hinzugefügt + gibt Wert aus wenn Schlüssel bereits in der Map vorhanden ist, sonst null
+- `name.remove (Object key)` -> Keys wird gelöscht + Wert des gelöschten Keys wird ausgegeben
+- `name.values()` -> gibt alle Werte der Map aus
+- `name.keySet()` -> gibt alle Schlüssel der Map aus
+- `name.get(Object key)` -> ermittelt Wert zu Key
+- `name.isEmpty()` -> prüft ob die Map leer ist
+- `name.clear()` -> entfernt alle Einträge aus der Map
+- `name.size()` -> gibt die Anzahl an vorhandenen Werten zurück
+
+
 
 ## Beispiel
 
