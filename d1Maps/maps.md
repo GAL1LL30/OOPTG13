@@ -5,7 +5,7 @@
 - Map-Klassen müssen das Interface "java.util.Map" implementierer
 - Jeder Eintarag in der Map besthet aus einem Schlüssel und einem Wert
 - Jeder Schlüssel muss einzigartig sein
-- Wenn ein Schlüssel bereits vergeben ist, wird der SWert überschrieben
+- Wenn ein Schlüssel bereits vergeben ist, wird der Wert überschrieben
 
 ## Map bearbeitung
 
@@ -69,3 +69,9 @@ public class HashMapTest
     }
 }
 ````
+
+
+
+
+
+http://www.scalingbits.com/java/javakurs2/programmieren2/collection/maps
