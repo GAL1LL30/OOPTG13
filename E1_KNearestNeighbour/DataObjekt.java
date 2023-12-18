@@ -1,4 +1,4 @@
-package KNearestNeighbour;
+package E1_KNearestNeighbour;
 
 public class DataObjekt {
     int x;

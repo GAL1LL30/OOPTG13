@@ -1,4 +1,4 @@
-package KNearestNeighbour;
+package E1_KNearestNeighbour;
 
 import java.util.ArrayList;
 
