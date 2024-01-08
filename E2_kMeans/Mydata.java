@@ -2,20 +2,26 @@ package E2_kMeans;
 
 public class Mydata {
     
-    double x,y;
+    int schueler, anzKlassen;
     double c;
+    String name;
 
-    public Mydata(double x, double y){
-        this.x = x;
-        this.y = y;
+    public Mydata(int schueler, int anzKlassen){
+        this.anzKlassen = anzKlassen;
+        this.schueler = schueler;
     }
 
-    public double getX(){
-        return x;
+    public Mydata(double center, String name){
+        this.c = center;
+        this.name = name;
     }
 
-    public double getY(){
-        return y;
+    public double getAnzKlassen(){
+        return anzKlassen;
+    }
+
+    public double getSchueler(){
+        return schueler;
     }
 
     public double getCenter(){
@@ -28,7 +34,7 @@ public class Mydata {
 
     @Override
     public String toString() {
-        return "Data x=" + x + ",\ny=" + y;
+        return "Schueler Nr. " + schueler + ",hat " + anzKlassen + "Klassen verwendet.";
     }
 
 
