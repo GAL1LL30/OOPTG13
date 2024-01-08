@@ -19,7 +19,7 @@ public class ArrayListSample{
         //Objekt entfernen
         namen.remove(1);
 
-        //Über Liste interagieren
+        //Über Liste interieren
         for (String i : namen) {
             System.out.println(i);
         }

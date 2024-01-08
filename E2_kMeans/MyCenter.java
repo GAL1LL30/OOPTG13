@@ -3,20 +3,15 @@ package E2_kMeans;
 public class MyCenter {
 
     String name;
-    double x,y;
+    double x;
 
-    public MyCenter(double x, double y, String name){
+    public MyCenter(double x, String name){
         this.name = name;
         this.x = x;
-        this.y = y;
     }
 
     public double getX(){
         return x;
-    }
-
-    public double getY(){
-        return y;
     }
 
     public String getName(){
@@ -27,16 +22,12 @@ public class MyCenter {
         this.x = x;
     }
 
-    public void setY(double y){
-        this.y = y;
-    }
-
     public void setName(String name){
         this.name = name;
     }
 
     @Override
     public String toString() {
-        return "Cluster Name: '" + name + "',\nx: " + x + "\n,y: " + y;
+        return "Cluster Name: '" + name + "',\nx: " + x ;
     }
 }

@@ -3,7 +3,7 @@ package E2_kMeans;
 public class Mydata {
     
     int schueler, anzKlassen;
-    double c;
+    double center;
     String name;
 
     public Mydata(int schueler, int anzKlassen){
@@ -11,12 +11,7 @@ public class Mydata {
         this.schueler = schueler;
     }
 
-    public Mydata(double center, String name){
-        this.c = center;
-        this.name = name;
-    }
-
-    public double getAnzKlassen(){
+    public int getAnzKlassen(){
         return anzKlassen;
     }
 
@@ -25,11 +20,11 @@ public class Mydata {
     }
 
     public double getCenter(){
-        return c;
+        return center;
     }
 
-    public void setCenter(double c){
-        this.c = c;
+    public void setCenter(double center){
+        this.center = center;
     }
 
     @Override
